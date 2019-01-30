@@ -15,8 +15,8 @@ services:
     links:
     - mongo:mongo
   mongo:
-    image: mongo
+    image: mongo:3.5
     restart: always
-    container_name: "mongo"
+    container_name: "DOClever-mongo"
     volumes:
     - ./data/mongo:/data/db
